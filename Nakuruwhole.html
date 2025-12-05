@@ -1,0 +1,307 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nakuru Prime Wholesalers — Demo</title>
+  <meta name="description" content="Mixed general wholesaler — household goods, food, beverages, electronics. Demo site for pitching to clients in Nakuru.">
+  <style>
+    :root{--blue:#0b3b66;--gold:#e6b83a;--muted:#6b7280;--bg:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.5;color:#111;background:var(--bg);margin:0}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:18px}/* Header */
+header{background:var(--blue);color:#fff;padding:18px 0}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,#0f4f86,#0a3160);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff}
+nav{margin-left:auto}
+.navlinks{display:flex;gap:14px;align-items:center}
+.btn-primary{background:var(--gold);color:var(--blue);padding:10px 14px;border-radius:8px;font-weight:600}
+.btn-ghost{background:transparent;border:2px solid rgba(255,255,255,0.15);padding:8px 12px;border-radius:8px;color:#fff}
+
+/* Hero */
+.hero{display:flex;gap:20px;align-items:center;padding:36px 0}
+.hero-left{flex:1}
+.headline{font-size:24px;font-weight:700;margin:0 0 10px}
+.subline{color:var(--muted);margin:0 0 18px}
+.hero-actions{display:flex;gap:12px}
+.hero-right{flex:1;display:flex;align-items:center;justify-content:center}
+.hero-card{width:100%;max-width:420px;border-radius:12px;padding:12px;background:#f7f8fb;border:1px solid #eef2f6}
+
+/* Features */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.card{background:#fff;border-radius:10px;padding:14px;border:1px solid #eef2f6}
+.card h4{margin:0 0 8px}
+.categories{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.cat{padding:8px 10px;border-radius:8px;background:#f3f4f6;border:1px solid #e6e9ef;font-size:13px}
+
+/* Products */
+.products{margin:28px 0}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.product{background:#fff;border-radius:8px;padding:10px;border:1px solid #eef2f6;display:flex;flex-direction:column}
+.p-image{height:90px;border-radius:6px;background:linear-gradient(180deg,#fff,#f3f4f6);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted)}
+.p-title{font-weight:600;margin:8px 0 6px;font-size:14px}
+.p-price{font-weight:700;color:var(--blue)}
+.p-action{margin-top:auto;display:flex;gap:8px}
+.whatsapp{background:#25D366;color:#fff;padding:8px;border-radius:8px;flex:1;text-align:center;font-weight:600}
+.details{background:transparent;border:1px solid #e6e9ef;padding:8px;border-radius:8px}
+
+/* About & Contact */
+.section{padding:18px 0}
+.about-grid{display:grid;grid-template-columns:2fr 1fr;gap:18px}
+
+/* Footer */
+footer{background:#f8fafc;padding:18px;border-top:1px solid #eef2f6}
+.footer-grid{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
+/* Responsive */
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}}
+@media (max-width:520px){.hero{flex-direction:column}.hero-right{order:-1}.navlinks{display:none}.product-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+
+/* small tweaks */
+.muted{color:var(--muted)}
+input,textarea,button{font-family:inherit}
+.map{width:100%;height:220px;border-radius:8px;border:1px solid #e6e9ef;overflow:hidden}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center;">
+      <div class="brand">
+        <div class="logo">NP</div>
+        <div>
+          <div style="font-weight:700">Nakuru Prime Wholesalers</div>
+          <div style="font-size:13px;color:#e9eef6">Mixed General Wholesale • Nakuru</div>
+        </div>
+      </div>
+      <nav>
+        <div class="navlinks">
+          <a href="#products" style="color:#fff">Products</a>
+          <a href="#about" style="color:#fff">About</a>
+          <a href="#contact" style="color:#fff">Contact</a>
+          <a class="btn-primary" href="https://wa.me/254700000000?text=Hello%20Nakuru%20Prime,%20I%20want%20to%20place%20a%20wholesale%20order" target="_blank" rel="noopener">WhatsApp Order</a>
+        </div>
+      </nav>
+    </div>
+  </header>  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1 class="headline">Your Trusted Nakuru Wholesale Partner — Fast, Reliable & Affordable Supplies</h1>
+        <p class="subline">Household goods, food, beverages, electronics, cleaning products & more — bulk pricing for retailers and small shops across Nakuru.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#products">View Products</a>
+          <a class="btn-ghost" href="https://wa.me/254700000000?text=Hello%20Nakuru%20Prime,%20I%20want%20to%20place%20a%20wholesale%20order" target="_blank">WhatsApp Order Now</a>
+        </div><div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>Wide Variety</h4>
+        <p class="muted">Everything your shop needs under one roof — from detergents to snacks and small electronics.</p>
+      </div>
+      <div class="card">
+        <h4>Bulk Discounts</h4>
+        <p class="muted">Competitive wholesale pricing so your margins improve with every order.</p>
+      </div>
+      <div class="card">
+        <h4>Fast Delivery</h4>
+        <p class="muted">Same-day delivery in Nakuru CBD and next-day to nearby towns for larger orders.</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="hero-right">
+    <div class="hero-card">
+      <div style="display:flex;gap:10px;align-items:center">
+        <div style="width:64px;height:64px;border-radius:8px;background:linear-gradient(135deg,#fff,#f4f6f9);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted)">Boxes</div>
+        <div>
+          <div style="font-weight:700">Order in Bulk</div>
+          <div class="muted" style="font-size:13px">Start from 10 units. Request a catalogue via WhatsApp.</div>
+        </div>
+      </div>
+      <div style="margin-top:12px;display:flex;gap:8px">
+        <a class="whatsapp" href="https://wa.me/254700000000?text=Please%20send%20your%20product%20catalogue" target="_blank">Request Catalogue</a>
+        <a class="details" href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="products">
+  <h2 style="margin:0 0 10px">Top Categories & Products</h2>
+  <div class="categories">
+    <div class="cat">Food & Grains</div>
+    <div class="cat">Beverages</div>
+    <div class="cat">Household</div>
+    <div class="cat">Cleaning</div>
+    <div class="cat">Cosmetics</div>
+    <div class="cat">Electronics (small)</div>
+    <div class="cat">Baby Care</div>
+  </div>
+
+  <div style="margin-top:14px" class="product-grid">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="p-image">Sugar 50kg</div>
+      <div class="p-title">Refined Sugar — 50kg bag</div>
+      <div class="p-price">KSh 5,200 / bag</div>
+      <div class="p-action">
+        <a class="whatsapp" href="https://wa.me/254700000000?text=Order:%20Sugar%2050kg%20-%20Quantity:%201" target="_blank">Order</a>
+        <a class="details" href="#contact">Details</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="p-image">Rice 50kg</div>
+      <div class="p-title">Pishori Rice — 50kg</div>
+      <div class="p-price">KSh 9,800 / bag</div>
+      <div class="p-action">
+        <a class="whatsapp" href="https://wa.me/254700000000?text=Order:%20Pishori%20Rice%2050kg%20-%20Quantity:%201" target="_blank">Order</a>
+        <a class="details" href="#contact">Details</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <div class="p-image">Coke Crate</div>
+      <div class="p-title">Coca-Cola 24 bottles</div>
+      <div class="p-price">KSh 1,600 / crate</div>
+      <div class="p-action">
+        <a class="whatsapp" href="https://wa.me/254700000000?text=Order:%20Coca-Cola%20Crate%20-%20Quantity:%201" target="_blank">Order</a>
+        <a class="details" href="#contact">Details</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="p-image">Sunlight</div>
+      <div class="p-title">Sunlight Washing Powder — 2kg</div>
+      <div class="p-price">KSh 240 / pack</div>
+      <div class="p-action">
+        <a class="whatsapp" href="https://wa.me/254700000000?text=Order:%20Sunlight%202kg%20-%20Quantity:%201" target="_blank">Order</a>
+        <a class="details" href="#contact">Details</a>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product">
+      <div class="p-image">Unga</div>
+      <div class="p-title">Raha Flour — 2kg / 10kg</div>
+      <div class="p-price">KSh 130 / 2kg</div>
+      <div class="p-action">
+        <a class="whatsapp" href="https://wa.me/254700000000?text=Order:%20Raha%20Flour%202kg%20-%20Quantity:%201" target="_blank">Order</a>
+        <a class="details" href="#contact">Details</a>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product">
+      <div class="p-image">Milk</div>
+      <div class="p-title">Daima Long Life Milk — 12 pack</div>
+      <div class="p-price">KSh 1,100 / box</div>
+      <div class="p-action">
+        <a class="whatsapp" href="https://wa.me/254700000000?text=Order:%20Daima%20Milk%20Box%20-%20Quantity:%201" target="_blank">Order</a>
+        <a class="details" href="#contact">Details</a>
+      </div>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product">
+      <div class="p-image">Battery</div>
+      <div class="p-title">AA Batteries — Pack of 24</div>
+      <div class="p-price">KSh 480 / pack</div>
+      <div class="p-action">
+        <a class="whatsapp" href="https://wa.me/254700000000?text=Order:%20AA%20Batteries%20Pack%20-%20Quantity:%201" target="_blank">Order</a>
+        <a class="details" href="#contact">Details</a>
+      </div>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="product">
+      <div class="p-image">Toilet Roll</div>
+      <div class="p-title">Toilet Tissue — 24 rolls</div>
+      <div class="p-price">KSh 750 / pack</div>
+      <div class="p-action">
+        <a class="whatsapp" href="https://wa.me/254700000000?text=Order:%20Toilet%20Tissue%20Pack%20-%20Quantity:%201" target="_blank">Order</a>
+        <a class="details" href="#contact">Details</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="about-grid">
+    <div>
+      <h2>About Nakuru Prime Wholesalers</h2>
+      <p style="margin-top:6px">Nakuru Prime Wholesalers supplies retailers, kiosks and restaurants with reliable stock at wholesale prices. We operate from Nakuru CBD and deliver across the town. We prioritise product quality and fast restocking so you never lose a sale.</p>
+
+      <h3 style="margin-top:12px">Mission</h3>
+      <p class="muted">To supply retailers with high-quality products at stable, fair prices.</p>
+
+      <h3 style="margin-top:10px">Vision</h3>
+      <p class="muted">To become Nakuru's most trusted wholesale supplier.</p>
+    </div>
+    <div>
+      <h3>Quick Facts</h3>
+      <ul style="padding-left:18px;margin-top:6px;color:var(--muted)">
+        <li>Over 8 years serving Nakuru retailers</li>
+        <li>Same-day delivery in CBD</li>
+        <li>Bulk discounts & flexible credit terms for trusted clients</li>
+        <li>Request catalogue via WhatsApp</li>
+      </ul>
+
+      <div style="margin-top:12px">
+        <strong>Open Hours</strong>
+        <div class="muted" style="margin-top:6px">Mon–Fri: 7:30am – 6:00pm<br>Sat: 8:00am – 2:00pm<br>Sun: Closed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact & Location</h2>
+  <div style="display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:10px">
+    <div>
+      <p class="muted">Phone / WhatsApp: <strong>07XX XXX XXX</strong></p>
+      <p class="muted">Email: <strong>info@nakuruprime.co.ke</strong></p>
+
+      <form onsubmit="alert('Form demo - replace with backend or mailto');return false;" style="display:grid;gap:8px;margin-top:8px">
+        <input placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid #e6e9ef">
+        <input placeholder="Business name" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef">
+        <input placeholder="Phone or WhatsApp" required style="padding:10px;border-radius:8px;border:1px solid #e6e9ef">
+        <textarea placeholder="Message / Order details" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef"></textarea>
+        <div style="display:flex;gap:8px">
+          <button class="btn-primary" type="submit">Send Message</button>
+          <a class="btn-ghost" href="https://wa.me/254700000000?text=Hello%20Nakuru%20Prime,%20I%20want%20to%20place%20an%20order" target="_blank">Order on WhatsApp</a>
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <div class="map">
+        <iframe title="Nakuru map" src="https://www.google.com/maps?q=Nakuru,+Kenya&output=embed" width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div style="margin-top:8px;font-size:13px;color:var(--muted)">Address: Nakuru CBD (near Wakulima Market) — exact location shared on order confirmation.</div>
+    </div>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Nakuru Prime Wholesalers</strong>
+        <div style="font-size:13px;color:var(--muted)">Serving Nakuru retailers since 2017</div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-size:13px;color:var(--muted)">Phone / WhatsApp: 07XX XXX XXX</div>
+        <div style="font-size:13px;color:var(--muted)">Email: info@nakuruprime.co.ke</div>
+      </div>
+    </div>
+  </footer>  <script>
+    // small enhancement: auto-scroll nav links to sections on same page
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+      e.preventDefault();const id=a.getAttribute('href').slice(1);const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'});
+    }));
+  </script></body>
+</html>
